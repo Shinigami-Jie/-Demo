@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>读取canvas中的图片</title>
+</head>
+<body>
+
+    <script>
+        // 2是双页 3是单页
+          var canvas = document.querySelectorAll('canvas')[2];
+          var ctx = canvas.getContext('2d');
+          var body = document.querySelector('body');
+          // 在Canvas上绘制内容（这里是一个简单的红色矩形）
+          ctx.fillRect(10, 10, 50, 50);
+
+          // 将Canvas中的内容转换为base64编码的图片数据
+          var imageData = canvas.toDataURL();
+            var body = document.querySelector('body');
+            var imgBox = document.querySelector(".imgBox");
+            if(imgBox){
+              body.removeChild(imgBox);
+            }
+            var img = document.createElement("img");
+            img.className = "imgBox";
+            img.setAttribute('width','50%');
+            img.setAttribute('height','50%');
+            img.src = imageData;
+            body.appendChild(img);
+    </script>
+</body>
+</html> 
