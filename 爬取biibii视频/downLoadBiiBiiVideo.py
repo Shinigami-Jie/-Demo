@@ -13,7 +13,7 @@ from ttkthemes import ThemedStyle
 headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
         "Referer": "https://www.bilibili.com/",
-        "Cookie":"SESSDATA=4e7a4809%2C1727414005%2C9be45%2A31CjBKuLg47mevZQ_6y9S3-jjUaLZVydRYpHRbpNcTgt2A--AnQCg1SBQ8HIWi88MoqoYSVmxBNWtvNlIwejFZaHIwRTd4VDVZQ1Q5d2dNbXgwX25waENnT1NPVGVNdzdGQ2FneVR1UTBXeDQwTFJ5cU9jTGx0RlBXd2YtTkI0UTFadHdQSDJ5X3V3IIEC"
+        "Cookie":"自己的用户cookie"
     };
 def downloadResource(sourceUrl,url, fileName, fileType,logFile):
     print(f"正在下载[{fileName}.{fileType}]中.......")
